@@ -2,14 +2,14 @@
 
 int main()
 {
-  Game *game = new Game();
+  game *_game = new game("Game");
 
-  while(true)
+  while(_game->get_current_game_state() != GAME_EXIT)
   {
-    game->input();
-    game->update();
-    game->draw();
+    _game->input();
+    _game->update();
+    _game->draw();
   }
-  game->free();
+  _game->free();
   return 0;
 }

@@ -1,2 +1,2 @@
 all:
-	g++ main.c game.c -o main -lSDL2
+	g++ main.cpp game.cpp -o main -lSDL2 -lGL
